@@ -36,3 +36,34 @@ plt.xlabel("Nombres")
 plt.ylabel("Salarios")
 plt.legend()
 plt.show()
+
+
+meses = ["Enero", "Febrero", "Marzo", "Abril"]
+ventas1 = [100, 200, 150, 300]
+ventas2 = [150, 250, 200, 400]
+
+plt.bar(meses, ventas2, label="Ventas 2024", color="blue")
+plt.bar(meses, ventas1, label="Ventas 2025", color="red")
+
+
+
+plt.title("Comparacion de ventas")
+plt.xlabel("Meses")
+plt.ylabel("Ventas")
+plt.legend()
+
+# Guardar mi grafico
+plt.savefig("mi_grafico.png")
+plt.show()
+
+
+'''
+GRAFICOS DE DISPERSION
+'''
+
+plt.scatter(x,y, label="Grafico de dispersion", color="purple")
+plt.title("Grafico de dispersion")
+plt.xlabel("Eje X")
+plt.ylabel("Eje Y")
+plt.legend()
+plt.show()
